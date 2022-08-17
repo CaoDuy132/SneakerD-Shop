@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Đăng ký tài khoản</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/iconic/css/material-design-iconic-font.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/css-hamburgers/hamburgers.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/animsition/css/animsition.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/select2/select2.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/daterangepicker/daterangepicker.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!--===============================================================================================-->
+  </head>
+  <body>
+    <div class="limiter">
+      <div
+        class="container-login100"
+        style="background-image: url('images/bg-01.jpg')"
+      >
+        <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+          <form class="login100-form validate-form" action="" method="">
+            <span class="login100-form-title p-b-49"> Đăng ký</span>
+
+            <div class="wrap-input100 validate-input m-b-23">
+              <span class="label-input100">Tên đăng nhập</span>
+              <input
+                class="input100"
+                type="text"
+                name="name"
+                id="userName"
+                placeholder="Tên đăng nhập"
+              />
+              <span class="focus-input100" data-symbol="&#xf206;"></span>
+              <span id="eroruserName" class="eror"></span>
+            </div>
+            <div class="wrap-input100 validate-input m-b-23">
+              <span class="label-input100">Email</span>
+              <input
+                class="input100"
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Nhập email"
+              />
+              <span class="focus-input100" data-symbol="&#xf206;"></span>
+              <span id="erorEmail" class="eror"></span>
+            </div>
+            <div class="wrap-input100 validate-input m-b-23">
+              <span class="label-input100">Mật khẩu</span>
+              <input
+                class="input100"
+                type="password"
+                id="pass"
+                placeholder="Nhập mật khẩu"
+              />
+              <span class="focus-input100" data-symbol="&#xf206;"></span>
+              <span id="erorPass" class="eror"></span>
+            </div>
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Password is required"
+            >
+              <span class="label-input100">Nhập lại mật khẩu</span>
+              <input
+                class="input100"
+                type="password"
+                id="passConfirm"
+                name="passConfirm"
+                placeholder="Xác nhận mật khẩu"
+              />
+              <span class="focus-input100" data-symbol="&#xf190;"></span>
+              <span id="erorconfirm" class="eror"></span>
+            </div>
+
+            <div class="container-login100-form-btn">
+              <div class="wrap-login100-form-btn">
+                <div class="login100-form-bgbtn"></div>
+
+                <button
+                  type="button"
+                  class="login100-form-btn"
+                  onclick="validate();"
+                >
+                  Đăng kí
+                </button>
+              </div>
+            </div>
+            <div id="mess"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="dropDownSelect1"></div>
+    <script>
+      function validate() {
+        var email = document.getElementById("email").value;
+        var userName = document.getElementById("userName").value;
+        var passConfirm = document.getElementById("passConfirm").value;
+        var erorconfirm = document.getElementById("erorconfirm");
+        var erorEmail = document.getElementById("erorEmail");
+        var erorUserName = document.getElementById("eroruserName");
+        var erorPass = document.getElementById("erorPass");
+        var reGexEmail =
+          /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
+        var pass = document.getElementById("pass").value;
+        var regexPassConfirm = "";
+        var regexUserName = /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
+        var erorPass = document.getElementById("erorPass");
+        //Tối thiểu 8 kí tự ít nhất 1 số và 1 chữ cái
+        var regexpass = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+        //check User name
+        if (userName == "" || userName == null) {
+          erorUserName.innerHTML = "Không được để trống";
+          return;
+        } else if (regexUserName.test(userName)) {
+          erorUserName.innerHTML = "Tên đăng nhập không hợp lệ!";
+          return;
+        } else if (userName.length < 5) {
+          erorUserName.innerHTML = "Tên đăng nhập  ít nhất 5 kí tự";
+        } else {
+          erorUserName.innerHTML = "";
+        }
+        //check pass
+        if (email == "" || email == null) {
+          erorEmail.innerHTML = "Email không được để trống!";
+          return;
+        } else if (!reGexEmail.test(email)) {
+          erorEmail.innerHTML = "Email không hợp lệ!";
+          return;
+        } else {
+          erorEmail.innerHTML = "";
+        }
+        //check email
+
+        if (pass.length == 0) {
+          erorPass.innerHTML = "Mật khẩu không được để trống";
+          return;
+        } else if (false == regexpass.test(pass)) {
+          erorPass.innerHTML = "Mật khẩu ít nhất 8 kí tự!";
+          return;
+        } else {
+          erorPass.innerHTML = "";
+        }
+        if (passConfirm == "" || passConfirm == null) {
+          erorconfirm.innerHTML = "Xác nhận mật khẩu không được để trống";
+          return;
+        } else if (passConfirm != pass) {
+          erorconfirm.innerHTML = "Xác nhận mật khẩu không đúng";
+          return;
+        } else {
+          erorconfirm.innerHTML = "";
+        }
+        if (userName && email && pass == passConfirm) {
+          // var url = `http://localhost:3000/users`;
+          // console.log(url);
+          // sp = {
+
+          // };
+          // options = {
+          //   method: "post",
+          //   body: JSON.stringify(sp),
+          //   headers: { "Content-Type": "application/json" },
+          // };
+          // fetch(url, options)
+          //   .then((res) => {
+          //     res.json();
+          //   })
+          //   .then((data) => {
+          //     document.location = "/login/Login_v4/login.html";
+          //   });
+          var user = JSON.parse(localStorage.getItem("user"));
+          if (user == null) {
+            user = [];
+            user.push({
+              id: 1,
+              username: userName,
+              email: email,
+              password: pass,
+            });
+          }
+          localStorage.setItem("user", JSON.stringify(user));
+          document.location = "/login/Login_v4/login.html";
+        }
+      }
+    </script>
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

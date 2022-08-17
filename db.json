@@ -1,0 +1,209 @@
+{
+  "categogies": [
+    {
+      "id": 1,
+      "name": "Giày thể thao"
+    },
+    {
+      "id": 2,
+      "name": "Giày sneakers"
+    },
+    {
+      "id": 3,
+      "name": "Giày xăng đan"
+    },
+    {
+      "id": 4,
+      "name": "Giày da"
+    },
+    {
+      "id": 5,
+      "name": "Giày đế cao su"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "Đỗ Cao Duy",
+      "password": "750028caoduy",
+      "email": "docaoduy@gmail.com"
+    },
+    {
+      "username": "Cao Duy 26",
+      "password": "750028caoduy",
+      "email": "duydcps18927@fpt.edu.vn",
+      "id": 2
+    },
+    {
+      "username": "Cao Duy 26",
+      "password": "750028caoduy",
+      "email": "caoduybonsai1322002@gmail.com",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "name": "Air Jordan 4 Retro x Off-White Sail",
+      "price": "590000",
+      "sale": "600000",
+      "cat_id": "2",
+      "image": "https://swaggersneaker.com/wp-content/uploads/2020/07/Nike-Air-Jordan-4-Retro-Off-White-sail-1.jpg",
+      "id": 1
+    },
+    {
+      "name": "Alexander McQueen Oversized Sneaker Black",
+      "price": "1155000",
+      "sale": "1255000",
+      "cat_id": "2",
+      "image": "https://saigonsneaker.com/wp-content/uploads/2019/12/phoi-do-unisex-400x400.jpg",
+      "id": 2
+    },
+    {
+      "name": "New Balance 574 Classic Grey",
+      "price": "1295000",
+      "sale": "1355000",
+      "cat_id": "2",
+      "image": "https://saigonsneaker.com/wp-content/uploads/2020/12/New-Balance-574-Grey.-Giay-Sneaker-Giay-The-Thao-New-Balance-Nam-Nu-Xam-1-400x400.jpg",
+      "id": 3
+    },
+    {
+      "name": "MLB Big Ball Chunky Embo NY Yankees",
+      "price": "924000",
+      "sale": "935000",
+      "cat_id": "2",
+      "image": "https://saigonsneaker.com/wp-content/uploads/2021/06/NVTC-MLB-BIG-BALL-CHUNKY-EMBO-NEW-YORK-YANKEES-5-scaled-350x350.jpg",
+      "id": 4
+    },
+    {
+      "name": "Giày Nike Air Jordan 1 Low GS ‘Shadow Toe’ 553560-052",
+      "price": "924000",
+      "sale": "944000",
+      "cat_id": "2",
+      "image": "https://sneakerdaily.vn/wp-content/uploads/2022/07/Thiet-ke-chua-co-ten-20-1.jpg.webp",
+      "id": 5
+    },
+    {
+      "name": "Giày Nike Air Jordan 1 Mid ‘Olive Toe’ DV0427-301",
+      "price": "5890000",
+      "cat": "1",
+      "image": "https://sneakerdaily.vn/wp-content/uploads/2022/08/giay-nike-air-jordan-1-mid-olive-toe-dv0427-301-8.png.webp",
+      "sale": "5990000",
+      "detail": "Ra mắt lần đầu tiên vào năm 1985 bởi Jordan Brand, Nike Air Jordan 1 vẫn tiếp tục duy trì được phong độ của mình, thậm chí còn có sức ảnh hưởng lớn tới văn hóa sneaker của giới trẻ ngày nay. Bất cứ tại thời điểm nào, những đôi Air Jordan 1 vẫn luôn được săn đón nhiệt tình với độ phủ sóng rộng rãi trên các mặt báo lớn và nền tảng mạng xã hội toàn cầu.",
+      "id": 6
+    },
+    {
+      "name": "Giày nữ Nike Air Jordan 1 Retro High OG GS ‘Volt Gold’ 575441-118",
+      "price": "6490000",
+      "cat": "1",
+      "image": "https://sneakerdaily.vn/wp-content/uploads/2022/07/giay-nu-nike-air-jordan-1-retro-high-og-gs-volt-gold-575441-118.jpg.webp",
+      "sale": "6590000",
+      "detail": "Ra mắt lần đầu tiên vào năm 1985 bởi Jordan Brand, Nike Air Jordan 1 vẫn tiếp tục duy trì được phong độ của mình, thậm chí còn có sức ảnh hưởng lớn tới văn hóa sneaker của giới trẻ ngày nay. Bất cứ tại thời điểm nào, những đôi Air Jordan 1 vẫn luôn được săn đón nhiệt tình với độ phủ sóng rộng rãi trên các mặt báo lớn và nền tảng mạng xã hội toàn cầu.",
+      "id": 7
+    },
+    {
+      "name": "Giày nữ Nike Air Jordan 1 Mid ‘White Lime’ BQ6472-131",
+      "price": "5290000",
+      "cat": "1",
+      "image": "https://sneakerdaily.vn/wp-content/uploads/2022/07/giay-nu-nike-air-jordan-1-mid-white-lime-bq6472-131.jpg.webp",
+      "sale": "5390000",
+      "detail": "Ra mắt lần đầu tiên vào năm 1985 bởi Jordan Brand, Nike Air Jordan 1 vẫn tiếp tục duy trì được phong độ của mình, thậm chí còn có sức ảnh hưởng lớn tới văn hóa sneaker của giới trẻ ngày nay. Bất cứ tại thời điểm nào, những đôi Air Jordan 1 vẫn luôn được săn đón nhiệt tình với độ phủ sóng rộng rãi trên các mặt báo lớn và nền tảng mạng xã hội toàn cầu.",
+      "id": 8
+    }
+  ],
+  "orders": [
+    {
+      "customer_name": "Đỗ Cao Duy ",
+      "customer_address": "46/46 Nguyễn Ngọc Nhựt phường Tân Thành, quân Tân Phú",
+      "customer_phone": "0386134526",
+      "customer_email": "duybonsai132@gmail.com",
+      "create_date": "2022-01-18",
+      "status": "Chờ xác nhận",
+      "id": 5
+    },
+    {
+      "customer_name": "Toàn phú toàn",
+      "customer_address": "10 /20 Ông Lãnh, Thuận Thới, Trà Ôn, Vĩnh Long",
+      "customer_email": "lephutoan@gmail.com",
+      "id": 6
+    },
+    {
+      "customer_name": "Lê Phú Toàn",
+      "customer_address": "46/46 Nguyễn Ngọc Nhựt",
+      "customer_phone": "0961433782",
+      "customer_email": "lephutoan1322002@gmail.com",
+      "create_date": "2022-02-22",
+      "status": "Chờ xác nhận",
+      "id": 7
+    },
+    {
+      "customer_name": "Đỗ Cao Duy",
+      "customer_address": "46 Nguyễn Ngọc Nhựt",
+      "customer_phone": "0386134526",
+      "customer_email": "duydps18927@fpt.edu.vn",
+      "create_date": "2022-02-23",
+      "status": "Chờ xác nhận",
+      "id": 8
+    },
+    {
+      "customer_name": "Đỗ Cao Duy",
+      "customer_address": "duydps18927@fpt.edu.vn",
+      "customer_phone": "0386134526",
+      "customer_email": "caoduybonsai@gmail.com",
+      "create_date": "2022-02-23",
+      "status": "Chờ xác nhận",
+      "id": 9
+    },
+    {
+      "customer_name": "Đỗ Cao Duy",
+      "customer_address": "46/46 Nguyễn Ngọc Nhựt",
+      "customer_email": "duydps18927@fpt.edu.vn",
+      "id": 10
+    }
+  ],
+  "order_details": [
+    {
+      "order_id": 8,
+      "product_id": 8,
+      "order_name": "Alexander McQueen Oversized Sneaker White",
+      "order_address": "46 Nguyễn Ngọc Nhựt",
+      "order_phone": "0386134526",
+      "order_customerName": "Đỗ Cao Duy",
+      "quantity": 1,
+      "unti_price": 924000,
+      "id": 3
+    },
+    {
+      "order_id": 9,
+      "product_id": 8,
+      "order_name": "Alexander McQueen Oversized Sneaker White",
+      "order_address": "duydps18927@fpt.edu.vn",
+      "order_phone": "0386134526",
+      "order_customerName": "Đỗ Cao Duy",
+      "quantity": 3,
+      "unti_price": 924000,
+      "id": 4
+    },
+    {
+      "order_id": 9,
+      "product_id": 7,
+      "order_name": "Balenciaga Triple S Clear Sole Orange Grey Black",
+      "order_address": "duydps18927@fpt.edu.vn",
+      "order_phone": "0386134526",
+      "order_customerName": "Đỗ Cao Duy",
+      "quantity": 1,
+      "unti_price": 1564000,
+      "id": 5
+    },
+    {
+      "order_id": 10,
+      "product_id": 7,
+      "order_name": "Balenciaga Triple S Clear Sole Orange Grey Black",
+      "order_address": "46?46 Nguyễn Ngọc Nhựt",
+      "order_phone": "0386134526",
+      "order_customerName": "Đỗ Cao Duy",
+      "quantity": 1,
+      "unti_price": 1564000,
+      "id": 6
+    }
+  ]
+}
